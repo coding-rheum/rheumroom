@@ -8,5 +8,6 @@ Useful content for rheum clinic.....
 
 3. <a href="http://orthoinfo.org/globalassets/pdfs/2022-rotator-cuff-and-shoulder-conditioning-program-handout.pdf/" target="_blank">Hello, world!</a>
 4. <a href="http://stackoverflow.com" target="_blank">Go</a>
+5. [SHOULDER](http://orthoinfo.org/globalassets/pdfs/2022-rotator-cuff-and-shoulder-conditioning-program-handout.pdf){target="_blank"}
 
 Please send feedback to coding.rheum@gmail.com if you have any. 
