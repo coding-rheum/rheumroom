@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rheumroom</title>
+</head>
+<body>
+    <h1>Rheumroom</h1>
+    <p>Useful content for rheum clinic.....</p>
+
+    <h2>Exercises:</h2>
+    <h3>Shoulder</h3>
+
+    <!-- Corrected the link -->
+    <p>Shoulder <a href="https://orthoinfo.org/globalassets/pdfs/2022-rotator-cuff-and-shoulder-conditioning-program-handout.pdf" target="_blank">Visit this page</a></p>
+
+    <p>Hello, world!</p>
+
+    <!-- Not sure what 'Go' is supposed to be, so just adding it as text -->
+    <p>Go</p>
+
+    <!-- Assuming SHOULDER{target="_blank"} is a styling or scripting requirement, but it's unclear. Added as text -->
+    <p>SHOULDER{target="_blank"}</p>
+
+    <p>Please send feedback to <a href="mailto:coding.rheum@gmail.com">coding.rheum@gmail.com</a> if you have any.</p>
+</body>
+</html>
