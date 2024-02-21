@@ -1,0 +1,720 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.showfooter {
+    display: block !important;
+}
+/**20-07-2022**/
+.top-banner {
+  background: #f2f2f2;
+  padding: 10px 30px;
+  text-align:right;
+}
+.top-banner ul{
+    margin:0px;
+}
+.top-banner ul li{
+    list-style:none;
+    display:inline;
+    border-right: 1px solid #000;
+    padding: 0px 10px;
+    font-size:16px;
+}
+.top-banner ul li:last-child{
+    border-right:0px;
+}
+.top-banner ul li img{
+    max-width:35px;
+}
+.top-banner ul li.fax_number img{
+   max-width:30px;
+   margin-right:6px;
+}
+.top-banner ul li.phone_number a{
+    color:#A52A2A;
+    font-size:20px;
+}
+.top-banner ul li a{
+    text-decoration:none;
+    color:#131f3e;
+}
+.top-banner ul li a:hover{
+    color:#A52A2A;
+}
+.header.header-full{
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header.header-full::before, .header.header-full::after{
+    display:none;
+}
+.header-full #logo{
+    max-width:420px;
+}
+.header.header-full .menu{
+    float:none;
+}
+.header.header-full li a{
+    background:transparent;
+    border-right:0px;
+}
+.main-banner-ac{
+    background-size:cover;
+    background-image:url('../Images/insurance gif/hand.jpg');
+    padding: 20px;
+    max-width: 100%;
+    background-position:center center;
+}
+.main-banner-content{
+    max-width:1300px;
+    margin:0px auto;
+}
+.text-over-img {
+  text-align: center;
+  max-width: 490px;
+  margin-left: auto;
+  font-size: 38px;
+  color: #002060;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  text-transform:uppercase;
+}
+.text-over-img-div{
+    text-align:center;
+    margin:30% auto 0px;
+    font-size:30px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-weight:500;
+}
+.text-over-img-div p{
+    background-color:#d6dce5;
+    display:inline-block;
+    margin:0px;
+    padding:10px 20px;
+}
+.testimonial-container.google-testi{
+    background:transparent;
+    display:flex;
+    flex-wrap:wrap;
+    margin:40px auto;
+}
+.google-testi .carousel{
+    box-shadow:none;
+    margin-top:0px;
+    width:calc(100% - 200px);
+}
+.google-testi .carousel-control{
+    background:transparent;
+    color:#000;
+    font-size:55px;
+}
+.google-testi .carousel-control:hover{
+    background:transparent;
+    opacity:.8;
+}
+
+.google-testi blockquote{
+    background-color: #f5f9f9;
+    color:#000;
+    font-style:italic;
+    box-shadow:none;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.testimonial-container.google-testi:after, .testimonial-container.google-testi:before{
+    display:none;
+}
+.google-left{
+    max-width:200px;
+    text-align:center;
+    font-size:14px;
+}
+.google-left img{
+    max-width:100%;
+}
+body .art-one-home-img{
+    background-position:top center;
+}
+.art-text h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+}
+.art-text h8{
+    color:#f49361;
+    text-align:center;
+    width:100%;
+    display:block;
+}
+.art-one-home p{
+    text-align:justify;
+    padding-right:10px;
+}
+.btn-about{
+    margin:0px auto;
+    text-align:center;
+}
+.two-block-index {
+  display: inline-block;
+}
+.foot-map-blocks{
+    display:flex;
+    justify-content:space-around;
+}
+.foot-map-blocks h4{
+    color:#d9d9d9;
+}
+.foot-map-blocks .map-block{
+    width:40%;
+    padding-block-start:93px;
+}
+.footer-info{
+    margin-top:40px;
+    border-top:1px solid #626262;
+}
+.page-heading-inner{
+    padding:20px;
+    max-width:100%;
+    text-align:center;
+    background:#1f4e79;
+}
+.page-heading-inner h2{
+    color:#fff;
+    text-shadow:0px 2px 3px rgb(0,0,0,.25);
+}
+.testimonial-container.google-testi .carousel-bullet{
+    color:#d9d9d9;
+}
+.heroSlider-fixed{
+    position:relative;
+}
+.slick-dots {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.slick-dots li.slick-active button {
+  background-color: black;
+}
+.slick-dots li button {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: #999;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.slick-dots li :hover {
+  background-color: black;
+}
+
+/* Custom Arrow */
+.heroSlider-fixed .prev {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  font-size: 0;
+  width:30px;
+}
+.heroSlider-fixed .prev img, .heroSlider-fixed .next img{
+    width:30px;
+    height:30px;
+}
+.prev :hover {
+  cursor: pointer;
+  color: black;
+}
+
+.heroSlider-fixed .next {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  right: 0;
+  font-size: 0;
+  width:30px;
+}
+.heroSlider-fixed .next :hover {
+  cursor: pointer;
+  color: black;
+}
+
+#myHeader{
+    display:none;
+}
+/***Responsive medida***/
+@media screen and (max-width:1024px){
+    .text-over-img{
+        max-width:100%;
+    }
+    
+}
+
+@media screen and (max-width:1032px){
+   .foot-map-blocks{
+       display:flex;
+       flex-wrap:wrap;
+   }
+   .foot-map-blocks .map-block{
+       width:100%;
+   }
+}
+
+@media screen and (max-width:992px){
+    .main-banner-ac{
+        min-height:600px;
+    }
+    .text-over-img-div{
+        margin-top:40%;
+    }
+    .foot-map-blocks .map-block {
+      width: 100%;
+      margin-bottom:20px;
+        
+    }
+}
+
+@media screen and (max-width:860px){
+    .foot-map-blocks{
+      flex-wrap:wrap;
+    }
+    .header.header-full {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+}
+
+
+@media screen and (max-width:1024px){
+   .text-over-img {
+    
+    text-align:center;
+    
+}
+}
+
+@media screen and (max-width:767px){
+    .main-banner-ac {
+      min-height: 530px;
+    }
+    .footer-woodlands-section{
+        text-align:center;
+    }
+}
+@media screen and (max-width:574px){
+    .header.header-full{
+        flex-wrap:wrap;
+        position:relative;
+    }
+    .header-full #logo {
+      max-width: 270px;
+      position:absolute;
+      top:5px;
+      left:0px;
+    }
+    .header-full nav.nav {
+      width: 100%;
+    }
+    .header.header-full .menu-icon{
+        border:none;
+    }
+    .top-banner {
+      padding: 10px 10px;
+      text-align: left;
+    }
+    .top-banner ul {
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .top-banner ul li{
+        width:44%;
+        margin-bottom:3px;
+    }
+    .top-banner ul li, .top-banner ul li.phone_number a{
+        font-size:14px;
+    }
+    .top-banner ul li:nth-child(even){
+        border-right:none;
+    }
+    .top-banner ul li img {
+      max-width: 30px;
+    }
+    .top-banner ul li.fax_number img {
+        max-width: 22px;
+    }
+    .foot-map-blocks{
+        flex-direction:column;
+    }
+    
+    }
+    .text-over-img{
+        
+        font-size:26px;
+        line-height:1.6;
+    }
+    .main-banner-ac {
+      min-height: 350px;
+    }
+    .text-over-img-div{
+        font-size:20px;
+    }
+    .testimonial-container.google-testi{
+        flex-direction:column;
+        jusify-content:center;
+    }
+    .google-testi .carousel{
+        width: calc(100% - 0px);
+    }
+    .google-left{
+        margin:0px auto;
+    }
+    .google-testi blockquote{
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .testimonial-container.google-testi .carousel-control.prev {
+      left: -13px;
+    }
+    .testimonial-container.google-testi .carousel-control.next {
+      right: -13px;
+    }
+    .testimonial-container.google-testi .testimonial-name {
+      text-align: center;
+      padding-left: 0px;
+    }
+    .two-block-index p{
+        text-align:justify;
+    }
+}
+@media screen and (max-width:430px){
+    .main-banner-ac {
+      min-height: 300px;
+    }
+    .text-over-img{
+        margin-top:0px;
+    }
+    .text-over-img-div {
+      margin-top: 44%;
+    }
+}
+@media screen and (max-width:390px){
+    .text-over-img-div {
+      font-size: 18px;
+    }
+    .text-over-img-div {
+      margin-top: 50%;
+    }
+}
+@media screen and (max-width:360px){
+    .top-banner{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .top-banner ul li{
+        width:auto;
+    }
+}

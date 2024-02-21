@@ -1,0 +1,610 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*Site MAp*/
+
+.site-map-wrapper {
+	padding: 20px;
+	background: white;
+	border: solid #f4f4f4 1px;
+}
+
+h2.site-map-head {
+	font-size: 32px;
+	line-height: 1.5;
+	color: #db3f02;
+}
+
+.site-map-wrapper a {
+	text-decoration: none;
+}
+
+.site-map-wrapper a:hover {
+	color: #db3f02;
+}
+
+
+/*Footer*/
+
+.footer-info {
+	display: flex;
+	text-align: left;
+	padding-top: 10px;
+}
+
+.footer-info>div {
+	width: 25%;
+	flex: 0 0 25%;
+}
+
+.footer-info .col::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	height: auto;
+	width: 0.5px;
+	background: #626262;
+	top: 0;
+	bottom: 50px;
+}
+
+.dropbtnf {
+	display: none;
+}
+
+.footer-info .col {
+	flex: 1;
+	padding: 15px;
+	position: relative;
+	height: 100%;
+}
+
+.footer-content {
+	width: 100%;
+	display: flex;
+	padding-bottom: 40px;
+	border-bottom: 0.5px solid #626262;
+}
+
+info-heading {
+	color: white;
+	text-align: left;
+	font-size: 16px;
+}
+
+.list {
+	color: #B0B0B0;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 0;
+	font-size: 17px;
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+.footer-check {
+	width: 50%;
+	padding: 20px;
+}
+
+.footer-home {
+	background-color: #222222;
+	padding: 20px;
+	max-width: none;
+	font-size: 17px;
+	color: #B0B0B0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.table-col td{
+    width:145px;
+}
+
+.footer-left .footer-logo-responsive{
+    max-height: 30px;
+    max-width: 30px;
+    margin-right: 13px
+}
+
+.footer-left{
+    margin-inline-start:3em;
+}
+
+.web-links {
+    font-family:sofia;
+	text-align: center;
+	font-size: 2.2em;
+	color: #F56B29;
+	/*border-bottom: 0.5px solid #626262;*/
+	/*padding-bottom: 20px;*/
+	/*margin-bottom: 10px;*/
+	margin: 0;
+	font-weight: 300;
+
+}
+
+.text-block{
+    width:55%;
+    display:flex;
+}
+
+.footer-woodlands-section{
+    width:100%;
+}
+
+.footer-woodlands-section h3{
+    width:80%;
+    text-align:center;
+}
+
+
+.column-contact{
+    justify-content:space-between;
+}
+
+
+td{
+    width:145px;
+}
+
+.footer-logo-responsive{height:30px;
+    width:30px;
+}
+
+.column-contact{
+    display:flex;
+    
+}
+
+.footer-left p{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+/*h10{*/
+
+
+/*	margin: 0;*/
+
+
+/*	font-family:sofia;*/
+
+
+/*	text-align: center;*/
+
+
+/*	font-size: 1.5em;*/
+
+
+/*	color:#F56B29;*/
+
+
+/*	}*/
+
+.google-maps {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	width: 50%;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 24px;
+	left: 0;
+	width: 100%;
+	;
+	height: 100%;
+	;
+}
+
+.footer-link {
+	font-family: sofia;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.footerDisclaimer {
+	font-size: 0.8em;
+}
+
+.footerDisclaimer-1 {
+	text-align:center;
+}
+
+footer a:hover,
+footer a:active {
+	color: #428bca;
+}
+
+footer a {
+	color: #D8D8D8;
+}
+
+a.site-map-link {
+	float: right;
+	font-size: 15px;
+	line-height: 29px;
+	vertical-align: middle;
+}
+.footer-check{
+	font-size: 1.2em;
+}
+
+
+/* navigation menu dropdown css */
+
+.header.clearfix {
+	overflow: visible;
+}
+
+nav a {
+	text-transform: uppercase;
+}
+
+li.dropdown {
+	display: block;
+	position: relative;
+}
+
+.dropdown-content {
+	position: absolute;
+	min-width: 160px;
+	display: none;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 0;
+	border-bottom: 1px solid #e2e2e2;
+	background: #fff !important;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: #000;
+}
+
+.footer-home ul {
+	text-align: left;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-link>ul {
+	display: flex;
+	list-style: none;
+	width: 95%;
+	overflow: visible;
+	flex-wrap: nowrap;
+}
+
+.footer-link>ul>li {
+	width: 100%;
+	white-space: nowrap;
+}
+
+.welness-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+.welness-list li {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.welness-list2 {
+	padding-left: 0;
+}
+
+.welness-list2 li {
+	font-size: 18px;
+	font-style: normal;
+}
+
+.service-list {
+	padding-left: 0;
+}
+
+.service-list li {
+	font-size: 20px;
+}
+
+.footer-links {
+	width: 100%;
+	display: flex;
+}
+
+.footer-link1 {
+	width: 33.33%;
+}
+
+.footer-link1 ul {
+	list-style: none;
+}
+
+.footer-links li a {
+	text-decoration: none;
+}
+
+.dropbtnf {
+	display: none;
+}
+
+.footer-info .col {
+	flex: 1;
+	padding: 15px;
+	position: relative;
+	height: 100%;
+}
+
+.footer-info .col::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	height: auto;
+	width: 1px;
+	background: #626262;
+	top: 0;
+	bottom: 50px;
+}
+
+.box{
+    text-align:center;
+    max-width:537px;
+}
+
+.text-2 .footer-table{
+    display: inline-block;
+    border-collapse: collapse;
+    box-sizing:none;
+    text-indent: initial;
+    border-spacing: 0px;
+    border-color: none;
+}
+
+.text-2 td{
+    border:none;
+}
+
+.text-2 tr:nth-child(even) {
+    background:transparent;
+}
+
+.footer-woodlands-section h3{
+    color:#B0B0B0;;
+}
+/*media query for footer*/
+
+@media screen and (max-width:1025px){
+    .foot-map-blocks .text-block{
+        width:100%;
+    }
+    .foot-map-blocks .column-contact .footer-left{
+       padding-right:20px; 
+    }
+}
+
+/* navigation menu dropdown css end */
+@media screen and (max-width: 966px){
+    .footer-check{
+    	font-size: 1em;
+    }
+}
+@media screen and (max-width: 840px){
+    .footer-check{
+    	font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	
+	.dropdown-content {
+		position: relative;
+	}
+	.footer-link a {
+		margin-right: 20px !important;
+		display: inline-block;
+	}
+	
+	.footer-left{
+	    margin-inline-start:1em;
+	}
+	
+	.footer-home {
+		padding: 15px;
+		font-size: 16px;
+	}
+	a.site-map-link {
+		float: none;
+		display: block;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	.footer-content {
+		display: block;
+	}
+	.footer-check {
+		width: 100%;
+		padding: 0;
+	}
+	.google-maps {
+		width: 100%;
+		height: 250px;
+		padding: 0;
+	}
+	.footer-links li a {
+		font-size: 14px;
+	}
+	.dropdownf,
+	.footer-info .dropdown {
+		padding-right: 0;
+		display: block;
+		position: relative;
+		background: #2f2f2f;
+		margin-bottom: 2px;
+	}
+	.dropdownf:hover .dropdown-contentf {
+		display: none;
+	}
+	.dropdown-contentf {
+		position: relative;
+		min-width: 160px;
+		display: none;
+		z-index: 1;
+	}
+	.footer-info>div {
+		width: 100%;
+		flex: 0 0 100%;
+	}
+	.footer-info {
+		display: block;
+		text-align: left;
+		overflow: hidden;
+	}
+	.info-heading {
+		display: none;
+	}
+	.web-links {
+		font-size: 1.5em;
+	}
+	.foot-map-blocks .column-contact{
+	   flex-direction:column; 
+	}
+	.footer-woodlands-section h3{
+	    width:100%;
+	   
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer-links {
+		display: block;
+	}
+	.footer-link1 {
+		width: 100%;
+	}
+	.footer-link1 ul {
+		text-align: center;
+		padding-left: 0;
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.info-heading {
+		font-size: 16px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.dropbtnf {
+		display: block;
+		padding: 15px 10px;
+		border-right: none;
+		white-space: nowrap;
+		text-decoration: none;
+		text-align: left;
+		position: relative;
+	}
+	.footer-info .col {
+		padding: 5px;
+	}
+	.dropbtnf {
+		display: block;
+		padding: 15px 10px;
+		border-right: none;
+		white-space: nowrap;
+		text-decoration: none;
+		text-align: left;
+		position: relative;
+	}
+	.dropdown-contentf {
+		position: relative;
+		min-width: 160px;
+		display: none;
+		z-index: 1;
+	}
+	.dropbtnf::after {
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-top: 7px solid #fff;
+		position: absolute;
+		content: '';
+		right: 10px;
+		top: 23px;
+		transform: rotate(-90deg);
+		transition: 0.2s ease;
+	}
+	.dropbtnf.open::after {
+		transform: rotate(0deg);
+		transition: 0.2s ease;
+	}
+	.dropbtnf {
+		font-size: 15px;
+		white-space: normal;
+	}
+	.dropdownf,
+	.footer-info .dropdown {
+		padding-right: 0;
+	}
+	.footer-info .col::after {
+		content: none;
+	}
+	.list {
+		padding: 10px 4px;
+		font-size: 17px;
+		border: none;
+		padding-left: 15px;
+		margin-bottom: 15px;
+	}
+	.footer-check{
+		font-size: 1em;
+	}
+	.footer-check p:nth-child(4) {
+        font-size: .88em;
+    }
+}
+
+.showfooter {
+    display: block !important;
+}
+
+@media screen and (max-width:380px){
+   .footer-check p:nth-child(2) {
+        font-size: .9em;
+    }
+    
+}
+
+@media screen and (max-width:358px){
+   .footer-check p:nth-child(2) {
+        font-size: 1.1em;
+    }
+    .footer-check p:nth-child(4) {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width:768px) {
+   .text-2 table{
+       margin:auto;
+   }
+}

@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page-wrapper {
+
+  max-width: 1300px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.table-3 tbody{
+    font-size:16px !important;
+}
+
+
+table {
+  border-collapse: collapse;
+width:100%;
+    }
+ th {
+  background: #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+tr:hover {
+  		color:#fff;
+		background:#187178;
+}
+
+table th{
+	text-align: center;
+}
+
+
+h1, h2 {
+
+   color: black;
+
+   font-size: 1.5em;
+
+   text-align: center;
+
+   text-transform: uppercase;
+
+	}
+/*2 large containers with PDF links*/
+h3{
+	font-size: 1.3em;
+	color:#000F3A;
+	font-weight:500;
+	text-align: center;
+	}
+
+
+
+.pdf a:hover{
+		color:#fff;
+		background:#187178;
+	padding: 4.5px;
+	
+}
+
+
+
+.pdf li {
+  margin: 30px 0;
+}
+
+.container
+{
+  text-align: center;
+  padding: 15px;  
+}
+.left-div
+{
+  display: inline-block;
+  max-width: calc( 50% - 15px );
+  text-align: left;
+  padding: 30px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 15px;
+  vertical-align: top;
+    width: 635px;
+    margin-left: 0;
+    box-sizing: border-box;
+    float: left;
+}
+.right-div
+{
+  display: inline-block;
+  max-width: calc( 50% - 15px );
+  text-align: left;
+  padding: 30px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 15px;
+  vertical-align: top;
+  width: 635px;
+    margin-right: 0;
+    box-sizing: border-box;
+    float: right;
+}
+.left-text, .right-text
+{
+	color: #333;
+}
+
+.azindex, .azindex1  {
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px auto;
+  background-color : #eee;
+    line-height: 1;
+}
+.azindex:hover a, .azindex1:hover a{
+  opacity : 0.8;
+}
+.azindex, .azindex1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.azindex a.linkList:first-child:before{
+    content:"All";
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.azindex1 a.linkList1:first-child:before{
+    content:"All";
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.azindex a, .azindex1 a {
+	transition: all 250ms;
+	text-decoration: none;
+	color: #2980c3;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background: #ddd;
+	margin-bottom: 3px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px !important;
+	opacity: 1 !important;
+	-webkit-tap-highlight-color: transparent;
+}
+.linkList:focus, .linkList:hover, .linkList1:focus, .linkList1:hover {
+	background: #2980c3;
+	color: #fff;
+}
+
+.azindex a.linkList:first-child, .azindex1 a.linkList1:first-child {
+  font-size: 3em;
+  vertical-align: middle;
+  position: relative;
+}
+.myconx {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) 
+{
+  .left-div, .right-div
+    {  width: 100%; max-width: 100%; margin-left: 0; margin-right: 0; }
+    .left-div, .right-div{
+        padding: 15px;
+    }
+    .left-div ul, .right-div ul{
+        padding-left: 15px;
+    }
+    table{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .azindex, .azindex1 { line-height: 2.5; height: auto; padding: 10px; box-sizing: border-box; }
+    .azindex a, .azindex1 a { font-size: 16px !important; }
+    
+    
+}
+@media screen and (max-width: 480px) {
+    table.layout.display.responsive-table { display: block; overflow: auto; }
+    th, td{
+        padding: 5px;
+    }
+    .page-wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+     table{
+        font-size: 12px;
+    }
+    h1, h2{
+        font-size: 1.2em;
+    }
+    .pdf li{
+        margin: 15px 0;
+    }
+    .pdf li a{
+        font-size: 16px;
+    }
+}
